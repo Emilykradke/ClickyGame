@@ -1,0 +1,22 @@
+.banner{
+  background-image: url("./flowers.jpg");
+  background-size: cover;
+  height: 40vh;
+  text-align: center;
+  margin-top: 0px;
+  width: 100%;
+}
+
+h1{
+  padding-top: 90px;
+  font-size: 60px;
+  color: red;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h2{
+  padding-top: 5px;
+  font-size: 30px;
+  color: #333;
+}
