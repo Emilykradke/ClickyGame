@@ -5,7 +5,7 @@ function CharacterTile(props) {
   return (
     <div className="container">
       <div className="imageTile">
-        <img alt="character" src={props.image}></img>
+        <img onClick={() => props.imageClicked(props.id)} alt="character" src={props.image}></img>
       </div>
     </div>
   )
