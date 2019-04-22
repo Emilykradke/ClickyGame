@@ -16,7 +16,7 @@ class App extends Component {
   imageClicked = id => {
     this.shuffleImages(this.state.characters)
     this.setState({ characters })
-    
+    this.handleGuess(id)
   }
 
   shuffleImages = (array) => {
@@ -25,12 +25,17 @@ class App extends Component {
 
   handleGuess = (id) => {
     let characters = [...this.state.characters]
-    if (characters.clicked === false) {
+    if (characters[id].clicked === false) {
+      // eslint-disable-next-line no-unused-expressions
+      characters[id].clicked === true
+
       this.setState({
-        score: this.state.score +1,
-        clicked: characters.clicked === true
+        score: this.state.score + 1,
+        characters
       })
-    } 
+    } else {
+      
+    }
   }
 
   render() {
