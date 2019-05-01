@@ -25,9 +25,10 @@ class App extends Component {
 
   handleGuess = (id) => {
     let characters = [...this.state.characters]
+    console.log(characters)
     if (characters[id].clicked === false) {
       // eslint-disable-next-line no-unused-expressions
-      characters[id].clicked === true
+      characters[id].clicked = true
 
       this.setState({
         score: this.state.score + 1,
@@ -52,9 +53,6 @@ class App extends Component {
                 imageClicked={this.imageClicked}
               />
             ))}
-          <CharacterTile 
-
-          />
         </Wrapper>
         <Footer />
       </div>
